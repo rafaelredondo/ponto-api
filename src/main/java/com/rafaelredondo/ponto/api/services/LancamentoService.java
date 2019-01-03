@@ -9,10 +9,12 @@ import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
 
 import com.rafaelredondo.ponto.api.entities.Lancamento;
 import com.rafaelredondo.ponto.api.repository.LancamentoRepository;
 
+@Service
 public class LancamentoService {
 
 	private static final Logger log = LoggerFactory.getLogger(LancamentoService.class);
