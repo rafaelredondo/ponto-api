@@ -40,7 +40,7 @@ public class LancamentoService {
 	 * @param id
 	 * @return Optional<Lancamento>
 	 */
-	@Cacheable("lancamentoPorId")
+	@Cacheable("lancamentoPorId") 
 	public Optional<Lancamento> buscarPorId(Long id) {
 		log.info("Buscando um lançamento pelo ID {}", id);
 		return this.lancamentoRepository.findById(id);
@@ -52,7 +52,7 @@ public class LancamentoService {
 	 * @param lancamento
 	 * @return Lancamento
 	 */
-	@CachePut("lancamentoPorId")
+	@CachePut("lancamentoPorId") 
 	public Lancamento persistir(Lancamento lancamento) {
 		log.info("Persistindo o lançamento: {}", lancamento);
 		return this.lancamentoRepository.save(lancamento);
