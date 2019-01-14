@@ -13,7 +13,7 @@
 	<artifactId>ponto</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ponto</name>
-	<description>API de teste para ponto eltrônico</description>
+	<description>API de teste para ponto eletrônico</description>
 
 	<properties>
 		<java.version>1.8</java.version>
